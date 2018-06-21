@@ -3,6 +3,7 @@ package com.meyj.controller;
 import org.apache.catalina.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.*;
 
@@ -11,6 +12,11 @@ import java.util.*;
  */
 @RestController
 public class TableController {
+
+//    @RequestMapping("/table")
+//    public ModelAndView tablePage() {
+//        return new ModelAndView("table");
+//    }
 
     @RequestMapping("/tableData")
     public Map<String, Object> getTableData(Integer page, Integer limit) {
